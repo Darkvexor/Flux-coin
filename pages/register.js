@@ -98,6 +98,14 @@ export default function Register() {
             {errors.confirmPassword && <p className="text-red-400 text-sm mt-1">{errors.confirmPassword}</p>}
           </div>
 
+          {/* Password Warning */}
+          <div className="bg-amber-500/5 border border-amber-500/15 rounded-xl p-4">
+            <p className="text-amber-400 font-bold text-sm mb-1">⚠️ IMPORTANT</p>
+            <p className="text-amber-400/70 text-xs leading-relaxed">
+              Store your password somewhere safe. For security reasons, password recovery is not available. Lost passwords cannot be reset.
+            </p>
+          </div>
+
           <button type="submit" disabled={loading} className="w-full py-4 bg-gradient-to-r from-flux-purple to-flux-blue rounded-xl font-bold text-lg hover:opacity-90 hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:hover:scale-100">
             {loading ? 'Creating Account...' : 'Create Account'}
           </button>

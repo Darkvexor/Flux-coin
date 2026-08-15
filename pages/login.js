@@ -82,12 +82,6 @@ export default function Login() {
             </div>
           </div>
 
-          <div className="text-right">
-            <Link href="/forgot-password" className="text-sm text-flux-blue hover:text-flux-purple transition-colors">
-              Forgot password?
-            </Link>
-          </div>
-
           <button type="submit" disabled={loading} className="w-full py-4 bg-gradient-to-r from-flux-purple to-flux-blue rounded-xl font-bold text-lg hover:opacity-90 hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:hover:scale-100">
             {loading ? 'Signing In...' : 'Sign In'}
           </button>
