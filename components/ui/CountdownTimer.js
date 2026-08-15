@@ -28,17 +28,17 @@ export default function CountdownTimer({ targetDate, label }) {
 
   return (
     <div className="text-center">
-      {label && <p className="text-gray-500 text-xs uppercase tracking-widest mb-8">{label}</p>}
+      {label && <p className="text-gray-500 text-xs uppercase tracking-widest mb-6">{label}</p>}
       {expired ? (
         <p className="text-4xl font-black text-amber-400 font-grotesk">Now Live</p>
       ) : (
-        <div className="flex justify-center gap-4 md:gap-8">
+        <div className="flex justify-center gap-2 md:gap-6">
           {boxes.map((box, i) => (
             <div key={i} className="text-center">
-              <div className="text-5xl md:text-7xl font-black text-white font-grotesk tabular-nums bg-white/[0.03] border border-white/[0.06] rounded-2xl px-4 py-3 min-w-[90px] md:min-w-[120px]">
+              <div className="text-2xl md:text-5xl font-black text-white font-grotesk tabular-nums bg-white/[0.03] border border-white/[0.06] rounded-xl md:rounded-2xl px-2 md:px-5 py-2 md:py-4 min-w-[50px] md:min-w-[90px]">
                 {String(box.value).padStart(2, '0')}
               </div>
-              <span className="text-gray-500 text-xs uppercase tracking-widest mt-3 block">{box.label}</span>
+              <span className="text-[10px] md:text-xs text-gray-500 uppercase tracking-widest mt-2 block">{box.label}</span>
             </div>
           ))}
         </div>
