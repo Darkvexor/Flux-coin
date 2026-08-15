@@ -9,12 +9,6 @@ export default function Footer() {
             </div>
             <span className="text-xl font-black font-grotesk text-white">FLUX</span>
           </div>
-          
-          <div className="flex gap-8">
-            <a href="#" className="text-gray-400 hover:text-[#3B82F6] transition-colors uppercase tracking-wider text-xs font-medium">Twitter</a>
-            <a href="#" className="text-gray-400 hover:text-[#8B5CF6] transition-colors uppercase tracking-wider text-xs font-medium">Telegram</a>
-            <a href="#" className="text-gray-400 hover:text-amber-400 transition-colors uppercase tracking-wider text-xs font-medium">Discord</a>
-          </div>
         </div>
         
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
